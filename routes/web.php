@@ -21,10 +21,11 @@ Route::get( '/issue/{issueId}', [IssuesController::class, 	'fetchIssueInfo']);
 
 // End Mandatory Routes
 
-Route::post('/issue/update', 	[IssuesController::class, 	'updateIssue']);
-Route::get('/get/issues', 		[IssuesController::class,	'getIssues']);
-Route::get('/list/issues', 		[IssuesController::class, 	'index']);
-Route::post('/votes/get', 		[VotesController::class, 	'fecthVotes']);
-Route::get('/test', 			[VotesController::class, 	'test']);
-Route::get('/home', 			[HomeController::class, 	'index'])->name('home');
+Route::post('/chat/send/message', 	[HomeController::class, 	'sendChatMessage']);
+Route::post('/issue/update', 		[IssuesController::class, 	'updateIssue']);
+Route::get('/get/issues', 			[IssuesController::class,	'getIssues']);
+Route::get('/list/issues', 			[IssuesController::class, 	'index']);
+Route::post('/votes/get', 			[VotesController::class, 	'fecthVotes']);
+Route::get('/test', 				[VotesController::class, 	'test']);
+Route::get('/home', 				[HomeController::class, 	'index'])->name('home');
 

@@ -55,9 +55,7 @@
                 <div class="card-header text-center">
                     <h1>♠ Global Chat ♠</h1>
                 </div>
-                <div class="card-body">
-
-                </div>
+                <public-chat></public-chat>
             </div>
         </div>
     </div>

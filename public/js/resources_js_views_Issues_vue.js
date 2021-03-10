@@ -83,8 +83,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -472,7 +470,14 @@ var render = function() {
       ])
     ]),
     _vm._v(" "),
-    _vm._m(1)
+    _c("div", { staticClass: "col-12 col-md-4" }, [
+      _c(
+        "div",
+        { staticClass: "card card-default" },
+        [_vm._m(1), _vm._v(" "), _c("public-chat")],
+        1
+      )
+    ])
   ])
 }
 var staticRenderFns = [
@@ -488,14 +493,8 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-12 col-md-4" }, [
-      _c("div", { staticClass: "card card-default" }, [
-        _c("div", { staticClass: "card-header text-center" }, [
-          _c("h1", [_vm._v("♠ Global Chat ♠")])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "card-body" })
-      ])
+    return _c("div", { staticClass: "card-header text-center" }, [
+      _c("h1", [_vm._v("♠ Global Chat ♠")])
     ])
   }
 ]
